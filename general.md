@@ -1,0 +1,8 @@
+- panoramica del corso
+  - progettare/realizzare
+  - fase 1: idea
+  - fase 2: progetto
+  - fase 3: realizzazione
+- componenti
+- installazione
+- test preliminare
