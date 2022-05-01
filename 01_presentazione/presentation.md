@@ -81,7 +81,7 @@ dataState: "no-title-footer"
 
 # software
   
-### ESP32 is programmable by various systems: c, arduino IDE, python
+### ESP32 is programmable by various systems: c, expressif c framework, arduino IDE, python
 
 --
 
@@ -95,6 +95,7 @@ dataState: "no-title-footer"
 
 ### it's simple and it's not only for ```experts```
 ### due of it's semplicity micropython permits to make real your ideas
+### it's free and open-source
 
 ---
 
@@ -119,19 +120,62 @@ dataState: "no-title-footer"
 
 # Anatomy of the board
 
----
+--
 
-<!-- .slide: data-transition="slide-in fade-out" background-transition="none" -->
 <img src=images/esp32_parts.png />
 
 ---
 
-### but all this is a piece of junk! 
+# required skills
 
 --
 
-###  All you need is some knowledge and...
+## circuit design
 
 --
 
-# IDEAS
+<img src=images/circuit_design.png />
+
+--
+
+## sensors/actuators knowledge
+
+--
+
+### humidity, pressure, proximity, presence, mouvement
+
+--
+
+### led, speakers, motors, monitors
+
+--
+
+## software developing
+
+--
+
+<img src=images/coding.png />
+
+---
+
+# creation
+
+--
+
+<!-- .slide: data-transition="fade" -->
+<img src=images/creation/001.svg style="background:none; border:none; box-shadow:none;"/>
+
+--
+
+<!-- .slide: data-transition="fade" -->
+<img src=images/creation/002.svg style="background:none; border:none; box-shadow:none;"/>
+
+--
+
+<!-- .slide: data-transition="fade" -->
+<img src=images/creation/003.svg style="background:none; border:none; box-shadow:none;"/>
+
+--
+
+<!-- .slide: data-transition="fade" -->
+<img src=images/creation/004.svg style="background:none; border:none; box-shadow:none;"/>
