@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Reveal JS presentation</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reveal.css">
+
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	  <!-- highlight Theme -->
+  	
+	  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+	
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	
+	
+	
+		<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+	
+	<link rel="stylesheet" href="libs/styles/tasklist.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  	<link rel="stylesheet" href="libs/reveal.js/4.1.3/theme/white.css" id="theme">
+  
+  
+
+
+  <!-- Revealjs Theme -->
+  
+
+ 
+</head>
+
+<body>
+  
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section >
+            
+            <style>
+    .reveal code {
+        background-color: #66b3ff;
+        color: #000000;
+        padding: 0.2em 0.25em 0.2em 0.25em;
+    }
+
+    #title-footer {
+        display: none;
+    }
+</style>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });</script>
+<script>
+    mermaid.initialize({ theme: 'neutral' })
+</script>
+<h1>Electronics tip’n’tricks</h1>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>electrical circuit</h3>
+<ul>
+<li>closed path consisting of a set of components connected by <em>conductive</em> material and where there is a flow of <strong>electrical current</strong></li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <img src=images/01_circuito.png style="background:none; border:none; box-shadow:none;" />
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h4>minimal fundamentals elements of an electrical circuit are:</h4>
+<ol>
+<li><em>voltage generator</em> (<em>potential difference generator</em>)</li>
+<li><em>resistive</em> components</li>
+</ol>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <img src=images/02_circuito+generatore.png style="background:none; border:none; box-shadow:none;" />
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>the circuit is populated by electrons (atomic negative particles) that in the absence of force move disorderly, <em>de facto</em> remaining stationary</li>
+<li>if a potential difference (voltage) is activated in the circuit, electrons flow <em>neatly</em> along the conductors of the circuit</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3><em>minimal</em> circuit (battery)</h3>
+<p><a href="https://tinyurl.com/yjbjum7w">battery + resistor</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>a potential difference is achieved through an <strong>imbalance</strong></li>
+<li>an excess of electrons is created at one pole of the generator, a lack of electrons at the other pole</li>
+<li>the flow of electrons proceeds from the pole with excess toward the pole with lack</li>
+<li>the voltage generator maintains the imbalance</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>the potential difference, otherwise called <em>voltage</em>, is measured in <strong>Volt</strong></h3>
+<p>$$V$$</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>voltage acts as a pressure force for the electrons</li>
+<li>the flow of electrons has a <em>speed</em>, determined by the voltage and resistance of the circuit</li>
+<li>this speed is called <strong>current intensity</strong></li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3><em>minimal</em> circuit (generator)</h3>
+<p><a href="https://tinyurl.com/ygcd335o">generator + resistor</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>current intensity is measured in <strong>Ampere</strong></h3>
+<p>$$A$$</p>
+<h5>often we will use milliAmpere</h5>
+<p>$$mA$$</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h4>Current intensity and Voltage are proportional:</h4>
+<ul>
+<li>if the voltage increases, the intensity also increases</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>the third element of an electrical circuit is the Resistance</h3>
+<ul>
+<li>Resistance is a measure of the opposition to current flow in an electrical circuit</li>
+<li>you can keep the current constant increasing the <strong>resistance</strong></li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>resistance is measured in <strong>ohm</strong></h3>
+<p>$$\Omega$$</p>
+<ul>
+<li>and its multiples:
+$$k\Omega$$
+$$M\Omega$$</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>Voltage, Current and Resistance are related</h3>
+<ul>
+<li>the ohm law expresses this correlation:</li>
+</ul>
+<p>$$V = IR$$
+$$I = \frac{V}{R}$$
+$$R = \frac{V}{I}$$</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p><a href="https://tinyurl.com/ydnows9b">ohm law</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>example 1</h3>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>In a circuit, if it has a current of $15 mA$ (then $0.015 A$) and a resistance of $100\Omega$, what is the voltage?</li>
+<li>for the ohm law we have:
+$$V = IR$$</li>
+<li>so:
+$$V = 0.015\cdot100 \implies 1.5 V$$</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>example 2</h3>
+<ul>
+<li>In a circuit , if it has a voltage of $5V$ and a resistance of $220\Omega$, what is the current?</li>
+<li>for the ohm law we have:
+$$I = \frac{V}{R}$$</li>
+<li>so:
+$$I = 5 / 220 \implies 0.0227A$$ (then $22.7mA$)</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>example 3</h3>
+<ul>
+<li>In a circuit, if it has a voltage of $5V$ and a current of $25mA$, what is the resistence?</li>
+<li>for the ohm law:
+$$R = \frac{V}{I}$$</li>
+<li>so:
+$$R = 5 / 0.025 \implies 200\Omega$$</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>in a circuit</h3>
+<ul>
+<li>the current is <strong>constant</strong> in every point of circuit</li>
+<li>the voltage presents drops near every component</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>voltage drops</h3>
+<p><a href="https://tinyurl.com/yjosb9ls">drops</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>led</h3>
+<ul>
+<li>diode that produces fotons (light)</li>
+<li>led produces a drop voltage caused by his forward voltage</li>
+</ul>
+<p><a href="https://tinyurl.com/ydzfyfew">circuit</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>calculate resistor for a led</h3>
+<p>$$R=\frac{(V-V_f)}{I}$$</p>
+
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  	
+	<script src="libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/search/search.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script>
+	  <script src="libs/reveal.js/4.1.3/plugin/anything/Chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/d3.v3.min.js"></script>				
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3.patch.js"></script>			
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/queue.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/topojson.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/function-plot.js"></script>
+
+ <!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+<script src="libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+
+  <script>
+
+		const printPlugins = [
+			RevealNotes, 
+			RevealHighlight,
+			RevealMath,
+			RevealAnimate,
+			RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		RevealSearch, 
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			controlsBackArrows: 'faded',
+			progress: true,
+			slideNumber: false,
+			//#showSlideNumber "all" "print" "speaker"
+			hash: true,//#  hash: false,
+			//# respondToHashChanges: true,
+			//# history: false,
+			keyboard: true,
+			//#keyboardCondition: null,
+			overview: false,
+			center: true,
+			touch: true,
+			loop: false,
+			rtl: false,
+			//#navigationMode: 'default', linear grid
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: true,
+			//#pause: true
+			showNotes: false,
+			autoPlayMedia: false, // TODO fix this to a nullable value
+			//#preloadIframes: null. true false
+			//#autoAnimate: true
+			//#autoAnimateMatcher: null,
+			//#autoAnimateEasing: 'ease',
+			//autoAnimateDuration: 1.0,
+			//#autoAnimateUnmatched: true
+			//#autoAnimateStyles: []
+			autoSlide: 0, // TODO fix this to a falseable value
+			autoSlideStoppable: true,
+			autoSlideMethod: '0',
+			defaultTiming: 120,
+			mouseWheel: false,
+			//#previewLinks: false
+			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
+			//#postMessageEvents: false,
+			//#focusBodyOnPageVisibilityChange: true,
+			transition: 'slide',
+			transitionSpeed: 'slow',
+			backgroundTransition: 'fade',
+			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			//#pdfSeparateFragments: true,
+			//#pdfPageHeightOffset: -1,
+			viewDistance: 3,
+			//#mobileViewDistance: 2,
+			display: 'block',
+			//#hideInactiveCursor: true,
+			//#hideCursorTime: 5000
+
+			// Parallax Background
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundHorizontal: 0,
+			parallaxBackgroundVertical: 0,
+			
+			//Presentation Size
+			width: 960,
+			height: 700,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2,
+			disableLayout: false,
+
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.ogg',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+				autoplay: false,	// automatically start slideshow
+				defaultDuration: 5,	// default duration in seconds if no audio is available
+				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+				playerOpacity: 0.05,	// opacity value of audio player if unfocused
+				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+			},
+			
+			chalkboard: { // font-awesome.min.css must be available
+					//src: "chalkboard/chalkboard.json",
+					storage: "chalkboard-demo",
+				},
+			
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+						{ icon: '<i class="fa fa-pen-square"></i>',
+						  title: 'Toggle chalkboard (B)',
+						  action: 'RevealChalkboard.toggleChalkboard();'
+						},
+						{ icon: '<i class="fa fa-pen"></i>',
+						  title: 'Toggle notes canvas (C)',
+						  action: 'RevealChalkboard.toggleNotesCanvas();'
+						}
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+		
+
+	</script>
+
+</body>
+
+</html>
