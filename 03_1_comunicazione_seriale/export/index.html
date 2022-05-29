@@ -232,10 +232,27 @@
         <section >
             
             <h2>Caratteristiche della comunicazione seriale</h2>
+<h3>SPEDIZIONE</h3>
 <ol>
 <li>I dati, di qualunque tipo essi siano (int, float, str) sono convertiti in bytes</li>
 <li>I bytes (gruppi di 8 valori binari 0/1) vengono spediti lungo il cavo seriale</li>
 <li>Ogni bit uguale a zero sarà un voltaggio basso, altrimenti sarà un voltaggio alto</li>
+</ol>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>RICEZIONE</h3>
+<h4>Percorso inverso rispetto al precedente</h4>
+<ol>
+<li>Si riceve un segnale elettrico binario</li>
+<li>Si converte in byte</li>
+<li>Si interpretano i bytes come caratteri</li>
 </ol>
 
             </section>
@@ -262,6 +279,18 @@
 
 
     
+        <section >
+            
+            <h3>Quando micropython riceve dei dati sulla scheda tramite la porta seriale, li converte automaticamente in string (<em>str</em>)</h3>
+<h3>Quando li spedisce, il dispositivo che li riceve acquisisce dei bytes, e dobbiamo convertirli programmaticamente</h3>
+<h3>In max i dati ricevuti sulla seriale sono tradotti automaticamente in byte. Per avere dati meno grezzi bisogna convertirli</h3>
+
+            </section>
+    
+
+
+
+    
     <section>
         <section >
             <h2>Esercitazione 2 - Acquisire in Max i dati inviati dalla scheda</h2>
@@ -271,7 +300,8 @@
             <section >
                 <h3>Creiamo una patch <code>serial_data.maxpat</code> con il seguente comportamento:</h3>
 <ol>
-<li>Quando riceve il messaggio bang</li>
+<li>Quando riceve un messaggio inviato dalla ESP32, catturiamo i bytes e li convertiamo in <code>symbol</code></li>
+<li>Interpretiamo il contenuto del <em>symbol</em> e, se è un <code>bang</code> accendiamo l’oggetto grafico <em>bang</em></li>
 </ol>
 
             </section>
@@ -283,14 +313,56 @@
 
 
     
+        <section >
+            
+            <h2>Lettura di dati tramite ESP32 e python</h2>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>Oltre che inviare dati la scheda ESP32, grazie all’interprete python integrato, può ricevere (e interpretare) dati in entrata dalla porta seriale</h3>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>input()</h3>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>Se per inviare dati sulla seriale python usa <strong>print()</strong>, per acquisire dati dalla seriale si può usare <code>input()</code>, che interrompe l’esecuzione di uno script finché non si riceva qualcosa dalla seriale</h3>
+
+            </section>
+    
+
+
+
+    
     <section>
         <section >
-            <h3>PUSH BUTTON</h3>
+            <h2>Esercitazione 3 - Inviare dati da Max sulla seriale</h2>
 
             </section>
         
             <section >
-                <h4>pulsante a pressione manuale</h4>
+                <h3>Creare una patch che invii i seguenti messaggi sulla porta seriale:</h3>
+<pre><code>`accendi` e `spegni`
+</code></pre>
 
             </section>
         
@@ -303,121 +375,16 @@
     
     <section>
         <section >
-            <h3>KEYPAD</h3>
+            <h2>Esercitazione 4 - Ricevere i dati sulla ESP32 inarrivo dalla porta seriale</h2>
 
             </section>
         
             <section >
-                <h4>matrice di pulsanti</h4>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3>DHT-11 (TEMPERATURA)</h3>
-
-            </section>
-        
-            <section >
-                <h4>invia un voltaggio che varia in base alla temperatura</h4>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3>PHOTORESISTOR (LUCE)</h3>
-
-            </section>
-        
-            <section >
-                <h4>invia un voltaggio che varia in base alla luminosità</h4>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3>INFRARED MOTION SENSOR (PRESENZA)</h3>
-
-            </section>
-        
-            <section >
-                <h4>memorizza una posizione attuale con un raggio a infrarossi, quindi basato sul calore cirocstante. Se l’ambiente cambia per la presenza di un corpo, il sensore invia un segnale pari a 1</h4>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3>ULTRASONIC RANGING MODULE (DISTANZA)</h3>
-
-            </section>
-        
-            <section >
-                <h4>invia un segnale digitale che rappresenta la distanza di un ostacolo dal sensore</h4>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3>MPU-6050 MODULE (ACCELEROMETRO E GIROSCOPIO)</h3>
-
-            </section>
-        
-            <section >
-                <h4><code>accelerometro</code>: misura la deviazione di un oggetto in movimento rispetto al piano verticale</h4>
-<h4><code>giroscopio</code>: misura l’orientamento rispetto a 3 assi</h4>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3>VIDEOCAMERA</h3>
-
-            </section>
-        
-            <section >
-                <h4>…</h4>
+                <h3>Creare uno script che:</h3>
+<ol>
+<li>Accenda un led quando dalla porta seriale arriva il messaggio <code>accendi</code></li>
+<li>Spenga un led quando dalla porta seriale arriva il messaggio <code>spegni</code></li>
+</ol>
 
             </section>
         
